@@ -26,7 +26,6 @@ int negTest(int *input,int tam){
   for(int i=0;i<tam;i++){
     if(input[i]<min){
         min = input[i];
-        printf("\nminimo:%d\n", min);
     }
   }
   neg = (min*(-1));

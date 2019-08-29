@@ -29,15 +29,10 @@ int negTest(int *input,int tam){
   int neg;
   int min = input[0];
   for(int i=0;i<tam;i++){
-    printf("i:%d\n",i);
     if(input[i]<min){
         min = input[i];
-        printf("\nminimo:%d\n", min);
-
     }
-    printf("i:%d\n",i);
   }
-  printf("passei");
   neg = (min*(-1));
   if(min<0){
     for(int i=0;i<tam;i++){
@@ -83,7 +78,6 @@ int main(int argc, char * argv[]){
       scanf("%d",&vetor[i]);
   	}
     int negativo = negTest(vetor,tamanho);
-    printf("terminei negativo");
     countSort(vetor,tamanho,negativo);
 
     free(vetor);
